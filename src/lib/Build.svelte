@@ -2,7 +2,9 @@
 
     function onBuild(){
         let code = document.getElementById("code-input").value
-        fetch("/build", {
+        let name = document.getElementById("name").value
+
+        fetch("/build?name=" + name, {
             method: "post",
             body: code
         }).then()

@@ -9,4 +9,4 @@
     }
 </script>
 
-<button>Save</button>
+<button on:click|preventDefault={onSave}>Save</button>
